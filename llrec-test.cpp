@@ -67,7 +67,17 @@ void dealloc(Node* head)
 //   function object struct declarations
 // -----------------------------------------------
 
+// struct remove_Evens {
+//   bool operator()(int x) {
+//     return x % 2 == 0;
+//   }
+// };
 
+struct remove_Odds {
+  bool operator()(int x) {
+    return x % 2 != 0;
+  }
+};
 
 
 
@@ -87,9 +97,17 @@ int main(int argc, char* argv[])
 
     // Test out your linked list code
 
+    // // remove_Evens:
+    // head = llfilter(head, remove_Evens());
+    // cout << "After remove_Evens: "; 
+    // print(head);
 
+    // remove_Odds
+    head = llfilter(head, remove_Odds());
+    cout << "After remove_Odds: ";
+    print(head);
 
-    
+    dealloc(head);
     return 0;
 
 }
