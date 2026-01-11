@@ -13,3 +13,6 @@ The assignment emphasizes **object-oriented design, abstraction, and event-drive
 - Dynamic interaction between gates, wires, and events
 - Modular design separating circuit logic and execution
 - Build automation using a Makefile
+
+## Notes
+Completed during Fall 2025. 
